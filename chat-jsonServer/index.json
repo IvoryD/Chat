@@ -1,0 +1,147 @@
+{
+    "getProfile":[
+        {
+            "id": 1,
+            "avatar": "url:/",
+            "displayName": "Amilia Luna",
+            "online": "true",
+            "position":"UI Designer",
+
+            "Facebook": "url:/https://www.facebook.com/",
+            "Twitter": "url:/https://twitter.com/",
+            "Instagramm": "url:/https://www.instagram.com/",
+            "In": "url/https://www.linkedin.com/",
+
+            "userName": "@amilia_lu",
+            "email": "a-luna@gmail.com",
+            "Skype": "amiluna",
+            "Timezone": "2:21 PM Local time"
+        },
+
+        {
+            "id": 2,
+            "avatar": "url:/",
+            "displayName": "Humanchek",
+            "online": "true",
+            "position":"Chelovek",
+
+            "Facebook": "url:/https://www.facebook.com/",
+            "Twitter": "url:/https://twitter.com/",
+            "Instagramm": "url:/https://www.instagram.com/",
+            "In": "url/https://www.linkedin.com/",
+
+            "userName": "@chelovek.ru",
+            "email": "hchelovek@gmail.com",
+            "Skype": "hchelovek",
+            "Timezone": "9:44 PM Local time"
+        },
+
+        {
+            "id": 3,
+            "avatar": "url:/",
+            "displayName": "Amilia Luna",
+            "online": "true",
+            "position":"UI Designer",
+
+            "Facebook": "url:/https://www.facebook.com/",
+            "Twitter": "url:/https://twitter.com/",
+            "Instagramm": "url:/https://www.instagram.com/",
+            "In": "url/https://www.linkedin.com/",
+
+            "userName": "@amilia_lu",
+            "email": "a-luna@gmail.com",
+            "Skype": "amiluna",
+            "Timezone": "2:21 PM Local time"
+        }
+    ],
+
+    "getUsersbyIds":[
+        {
+            "id": 1,
+            "displayName": "Pidrila",
+            "avatar": "url:/",
+            "online": "true"
+        }
+    ],
+
+    "friends":[
+        1,
+        2,
+        4,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+    ],
+
+    "channels": [
+        {
+            "id": 1,
+            "name": "general",
+            "countUsers": 100
+        }, 
+        
+        {
+            "id": 2,
+            "name": "support",
+            "countUsers": 200
+        },
+
+        {
+            "id": 3,
+            "name": "marketing",
+            "countUsers": 300
+        }, 
+
+        {
+            "id": 4,
+            "name": "thailan",
+            "countUsers": 400
+        }, 
+
+        {
+            "id": 5,
+            "name": "bali",
+            "countUsers": 500
+        }, 
+
+        {
+            "id": 6,
+            "name": "poland",
+            "countUsers": 600
+        }, 
+
+        {
+            "id": 7,
+            "name": "australia",
+            "countUsers": 700
+        }, 
+
+        {
+            "id": 8,
+            "name": "jobs",
+            "countUsers": 800
+        }, 
+
+        {
+            "id": 9,
+            "name": "startups",
+            "countUsers": 900
+        }, 
+
+        {
+            "id": 10,
+            "name": "italy",
+            "countUsers": 1000
+        }, 
+
+        {
+            "id": 11,
+            "name": "freelance",
+            "countUsers": 1100
+        }
+    ]
+}
