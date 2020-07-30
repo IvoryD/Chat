@@ -1,23 +1,29 @@
 <template>
-   <transition name="slide-fade">
+    <transition name="slide-fade">
     <div class="main" v-if="show">
         <div>
             <div class="container-image">
-                <img class="img-profile" src="../../assets/Icons/Photo.png">
+                <img class="img-profile">
             </div>
 
             <div class="container-profile">
 
                 <div class="container-namePosition separation">
-                    <p class="name">Amilia Luna</p>
-                    <p class="position">UI Designer</p>
+
+                    <div class="container-status">
+                        <p class="name">{{ profile.displayName }}</p>
+                        <Status :statusOnline="profile.online"></Status>
+                    </div>
+                    
+                    <p class="position">{{ profile.position }}</p>
+
                 </div>
 
                 <div class="container-social separation">
-                    <Facebook></Facebook>
-                    <Twitter></Twitter>
-                    <Instagram></Instagram>
-                    <In></In>
+                    <a :href= profile.Facebook><Facebook></Facebook></a>
+                    <a :href= profile.Twitter><Twitter></Twitter></a>
+                    <a :href= profile.Instagram><Instagram></Instagram></a>
+                    <a :href= profile.In><In></In></a>
                 </div>
 
                 <div class="container-buttons separation">
@@ -29,22 +35,22 @@
 
                     <div class="container-username separation-info">
                         <h1>Username</h1>
-                        <p class="username">@amilia_lu</p>
+                        <p class="username">{{ profile.userName }}</p>
                     </div>
 
                     <div class="container-email separation-info">
                         <h1>Email</h1>
-                        <p class="email">a-luna@gmail.com</p>
+                        <p class="email">{{ profile.email }}</p>
                     </div>
 
                     <div class="container-skype separation-info">
                         <h1>Skype</h1>
-                        <p class="skype">amiluna</p>
+                        <p class="skype">{{ profile.Skype }}</p>
                     </div>
 
                     <div class="container-timezone separation-info">
                         <h1>Timezone</h1>
-                        <p class="timezone">2:21 PM Local time</p>
+                        <p class="timezone">{{ profile.Timezone }}</p>
                     </div>
 
                 </div>
@@ -53,7 +59,7 @@
         </div>
 
         <div class="container-arrow">
-            <ArrowRightButton @click="showProfile"></ArrowRightButton>
+            <ArrowRightButton @click="hideProfile"></ArrowRightButton>
         </div>
 
     </div>
@@ -72,21 +78,35 @@ import MessageButton from "@/components/Buttons/MessageButton.vue";
 import OptionsButton from "@/components/Buttons/OptionsButton.vue";
 import ArrowRightButton from "@/components/Buttons/ArrowRightButton.vue";
 
+import Status from "@/components/Buttons/Status.vue";
+
 export default {
 
-     data(){
-      return {
-        show: true
-      }
+     props: {
+        friendId: Number,
+        friendDisplayName: String,
     },
 
-    methods:{
-        showProfile(){
-            this.show = !this.show
+    computed: {
+
+        profile() {
+            return this.$store.getters.getSelectedProfile;
+        },
+
+        show() {
+            return this.$store.getters.getShowProfile;
         }
     },
 
-    components:{
+    methods: {
+
+        hideProfile() {
+            this.$store.dispatch('hideProfile')
+        }
+    
+    },
+
+    components: {
       Facebook,
       Twitter,
       Instagram,
@@ -94,13 +114,14 @@ export default {
       MessageButton,
       OptionsButton,
       ArrowRightButton,
+      Status,
     }
 }
 </script>
 
 <style lang="scss" scoped>
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,8 +130,12 @@ export default {
     opacity: 0.8;
 }
 
-.container-profile{
+.container-profile {
      padding: 20px;
+}
+
+.container-status{
+    display: flex;
 }
 
 .name{
@@ -120,6 +145,7 @@ export default {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+    margin-right: 6px;
 }
 
 .position{

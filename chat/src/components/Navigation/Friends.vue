@@ -8,9 +8,10 @@
 
         <div class="container-friends">
 
-            <div class="profile profile-separation" v-for="(friend, i) in friends" :key="i">
+            <div class="profile profile-separation" @click="openProfile(friend)" v-for="(friend, i) in friends" :key="i">
+                <Status :statusOnline="friend.online" class="profile-status"></Status>
                 <div class="profile-image"></div>
-                <div class="profile-name">Orlando Diggs</div>
+                <div class="profile-name"> {{ friend.displayName }} </div>
             </div>
 
         </div>
@@ -20,36 +21,14 @@
 
 <script>
 
+import Status from "@/components/Buttons/Status.vue"
+
 import axios from 'axios'
 
 export default {
 
-    methods:{
-        openProfile(friend){
-
-            this.$router.push({ 
-
-                name: 'Profile', 
-
-                params: {
-                    "avatar": friend.avatar,
-                    "displayName": friend.displayName,
-                    "online": friend.online,
-                    "position": friend.position,
-
-                    "facebook": friend.Facebook,
-                    "twitter": friend.Twitter, 
-                    "instagramm": friend.Instagramm,
-                    "in": friend.In,
-
-                    "userName": friend.userName,
-                    "email": friend.email,
-                    "Skype": friend.Skype,
-                    "Timezone": friend.Timezone,
-                } 
-            })
-                .catch(()=>{})
-        }
+     components:{
+        Status,
     },
 
     data() {
@@ -85,11 +64,20 @@ export default {
                     .get('http://localhost:3000/getProfile' + filtrationString)
                     .then(response => {
                         vm.friends.push(...response.data)
-                        vm.$store.dispatch('ADD_PROFILES', response.data);
+                        vm.$store.dispatch('addProfiles', response.data);
                         })
             }
         });
     },  
+
+     methods: {
+
+       openProfile(friend){
+           this.$store.dispatch('setSelectedProfile', friend);
+           this.$store.dispatch('showProfile');
+       }
+
+    },
 }
 
 </script>
@@ -122,6 +110,10 @@ header{
     &:hover{
         color: #FFFFFF;
         background: rgb(105, 105, 109);
+    }
+
+    &-status{
+        margin-right: 13px;
     }
 
     &-image {

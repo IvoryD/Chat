@@ -23,9 +23,7 @@ export default {
             this.$router.push({ 
                 name: 'Chat', 
                 params: {
-                    "channelId": +channel.id,
-                    "channelName": channel.name, 
-                    "channelCount": +channel.countUsers,
+                    "channelId": channel.id + "",
                 } 
             })
                 .catch(()=>{})

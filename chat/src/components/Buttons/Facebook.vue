@@ -3,7 +3,6 @@
         <div class="facebook_icon"></div>
     </div>
 </template>
-
 <script>
 
 export default {

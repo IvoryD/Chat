@@ -102,7 +102,7 @@ h1 {
     margin-bottom: 30px;
 }
 
-.scrolls{
+.scrolls {
     padding-right: 10px;
     max-height: 800px;
     overflow-y: scroll;

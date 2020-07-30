@@ -17,7 +17,7 @@ Vue.use(VueRouter)
     name: 'Chat',
     component: Chat,
     props: true
-  }
+  },
 ]
 
 const router = new VueRouter({

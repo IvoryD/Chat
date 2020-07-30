@@ -5,7 +5,7 @@
     
     <router-view/>
 
-    <Profile v-if="show"></Profile>
+    <Profile  v-if="show"></Profile>
 
   </div>
 </template>
@@ -17,12 +17,6 @@ import Chat from "@/views/Chat.vue";
 import Profile from "@/components/Profile/Profile.vue";
 
 export default {
-
-    methods:{
-      showProfile(){
-        return this.$emit("show",show);
-      }
-    },
 
     data(){
       return {
