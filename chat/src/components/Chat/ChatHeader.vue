@@ -67,7 +67,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    border-bottom: 2px solid rgba($color: #000000, $alpha: 0.24);
     padding-top: 35px;
     padding-bottom: 20px;
     padding-left: 25px;

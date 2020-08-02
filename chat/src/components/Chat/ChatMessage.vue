@@ -31,6 +31,10 @@ export default {
 
     computed:{
 
+        profile(){
+            return this.$store.getters.getProfilesByIds([this.message.authorId])[0];
+        },
+
         time(){
             return this.$moment(this.message.time).format('h:mm A');
         },
@@ -46,7 +50,6 @@ export default {
 
     props: {
         message: Object,
-        profile: Object,
     },
 }
 

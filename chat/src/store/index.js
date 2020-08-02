@@ -7,7 +7,22 @@ export default new Vuex.Store({
 
   state: {
 
-    profiles: [],
+//Залогиненный юзер
+    profiles: [{
+      "id": 15,
+      "avatar": "user15",
+      "displayName": "Денис Белоконь",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@denis",
+      "email": "denis@gmail.com",
+      "Skype": "denis",
+      "Timezone": "6:21 AM Local time"
+    }],
     selectedProfile: null,
     showProfile: false,
 

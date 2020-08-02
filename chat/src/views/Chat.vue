@@ -9,19 +9,28 @@
 
     <div class="chat scrolls">
 
-    <div v-for="(message, i) in messages" :key="i">
-        <ChatMessage
-            :profile="getProfileById(message.authorId)"
-            :message="message">
-        </ChatMessage>
+        <div v-for="(message, i) in messages" :key="i">
+
+            <div v-if="getTextForSeparator(messages[i-1], message)" class="separator">
+                <div class="separator-separator"></div>
+                <div class="separator-text">{{ getTextForSeparator(messages[i-1], message) }}</div>
+                <div class="separator-separator"></div>
+            </div>
+
+            <ChatMessage
+                :message="message">
+            </ChatMessage>
+
+        </div>
+
     </div>
-        
+
         <ChatFooter 
             @enter="sendMessage"
             :channelName="channelName"
-            v-model="message.text"/>
+            v-model="message.text">
+        </ChatFooter>
 
-    </div>
 </div>
 </template>
 
@@ -72,11 +81,25 @@ export default {
     
     methods: {
 
+        getTextForSeparator(prevMessage, message){
 
-        getProfileById(id){
+            if(prevMessage){
+                let prevMessageDate = this.$moment(prevMessage.time);
+                let curMessageDate = this.$moment(message.time);
 
-            return this.profiles.find(profile => profile.id === id)
+                if(prevMessageDate.day() != curMessageDate.day()){
+                    let curDate = this.$moment()
+                    let diffMessageDate = curDate.diff(curMessageDate, 'days') 
 
+                    if(diffMessageDate === 0 && curDate.day() === curMessageDate.day()){
+                        return "Today"
+                    } else if(diffMessageDate <= 1 && curDate.day() - curMessageDate.day() === 1) {
+                        return "Yesterday"  
+                    } else {
+                        return curMessageDate.format('dddd, MMMM Do')
+                    }      
+                }
+            }
         },
 
         sendMessage(){
@@ -165,6 +188,24 @@ export default {
 
 <style lang="scss" scoped>
 
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    &-separator {
+        width: 100%;
+        border: 1px solid rgba($color: #000000, $alpha: 0.16);
+    }
+
+    &-text { 
+        white-space: nowrap;
+        color: #8D8D8D;
+        padding: 0px 15px;
+    }
+}
+
 .main {
     display: flex;
     flex-direction: column;
@@ -177,7 +218,7 @@ export default {
     max-height: 800px;
     overflow-y: scroll;
 
-    &::-webkit-scrollbar{
+    &::-webkit-scrollbar {
         width: 6px;    
 
     }

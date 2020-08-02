@@ -70,7 +70,7 @@ export default {
     display: flex;
     align-items: center;
     padding: 25px;
-    border-top: 1px solid rgba($color: #000000, $alpha: 0.24);
+    border-top: 2px solid rgba($color: #000000, $alpha: 0.24);
 
     :not(:last-child){
         margin-right: 20px;
