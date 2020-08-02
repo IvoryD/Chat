@@ -1,366 +1,507 @@
 {
-    "getProfile":[
-        {
-            "id": 1,
-            "avatar": "url:/",
-            "displayName": "Amilia Luna",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@amilia_lu",
-            "email": "a-luna@gmail.com",
-            "Skype": "amiluna",
-            "Timezone": "2:21 PM Local time"
-        },
-
-        {
-            "id": 2,
-            "avatar": "url:/",
-            "displayName": "Safredo Juss",
-            "online": "false",
-            "position":"Chelovek",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@safredo.ru",
-            "email": "safredo@gmail.com",
-            "Skype": "safredo",
-            "Timezone": "3:44 PM Local time"
-        },
-
-        {
-            "id": 3,
-            "avatar": "url:/",
-            "displayName": "Elneo Faina",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@Elneo",
-            "email": "elneo@gmail.com",
-            "Skype": "elneo",
-            "Timezone": "4:21 PM Local time"
-        },
-
-        {
-            "id": 4,
-            "avatar": "url:/",
-            "displayName": "Mialind Bucu",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@mialind",
-            "email": "mialind@gmail.com",
-            "Skype": "mialind",
-            "Timezone": "5:21 PM Local time"
-        },
-
-        {
-            "id": 5,
-            "avatar": "url:/",
-            "displayName": "Evba Igezing",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@evba",
-            "email": "evba@gmail.com",
-            "Skype": "evba",
-            "Timezone": "6:21 PM Local time"
-        },
-
-        {
-            "id": 6,
-            "avatar": "url:/",
-            "displayName": "Zuba Albenhilde",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@zuba",
-            "email": "zuba@gmail.com",
-            "Skype": "zuba",
-            "Timezone": "7:21 PM Local time"
-        },
-
-        {
-            "id": 7,
-            "avatar": "url:/",
-            "displayName": "Bite Kaeny",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@bite",
-            "email": "bite@gmail.com",
-            "Skype": "bite",
-            "Timezone": "8:21 PM Local time"
-        },
-
-        {
-            "id": 8,
-            "avatar": "url:/",
-            "displayName": "Vestein Axwe",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@vestein",
-            "email": "vestein@gmail.com",
-            "Skype": "vestein",
-            "Timezone": "9:21 PM Local time"
-        },
-
-        {
-            "id": 9,
-            "avatar": "url:/",
-            "displayName": "Jep Mimond",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@jep",
-            "email": "jep@gmail.com",
-            "Skype": "jep",
-            "Timezone": "1:21 AM Local time"
-        },
-
-        {
-            "id": 10,
-            "avatar": "url:/",
-            "displayName": "Thatu Hiit",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@thatu",
-            "email": "thatu@gmail.com",
-            "Skype": "thatu",
-            "Timezone": "2:21 AM Local time"
-        },
-
-        {
-            "id": 11,
-            "avatar": "url:/",
-            "displayName": "Aldr Aetheax",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@aldr",
-            "email": "aldr@gmail.com",
-            "Skype": "aldr",
-            "Timezone": "3:21 AM Local time"
-        },
-
-        {
-            "id": 12,
-            "avatar": "url:/",
-            "displayName": "Olani Foetta",
-            "online": "true",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@olani",
-            "email": "olani@gmail.com",
-            "Skype": "olani",
-            "Timezone": "4:21 AM Local time"
-        },
-
-        {
-            "id": 13,
-            "avatar": "url:/",
-            "displayName": "Phogel Maend",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@phogel",
-            "email": "phogel@gmail.com",
-            "Skype": "phogel",
-            "Timezone": "5:21 AM Local time"
-        },
-
-        {
-            "id": 14,
-            "avatar": "url:/",
-            "displayName": "Etrand Berban",
-            "online": "false",
-            "position":"UI Designer",
-
-            "Facebook": "https://www.facebook.com/",
-            "Twitter": "https://twitter.com/",
-            "Instagram": "https://www.instagram.com/",
-            "In": "https://www.linkedin.com/",
-
-            "userName": "@etrand",
-            "email": "etrand@gmail.com",
-            "Skype": "etrand",
-            "Timezone": "6:21 AM Local time"
-        }
-
-    ],
-
-    "getUsersbyIds":[
-        {
-            "id": 1,
-            "displayName": "Pidrila",
-            "avatar": "url:/",
-            "online": "true"
-        }
-    ],
-
-    "friends":[
-        1,
-        2,
-        4,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14
-    ],
-
-    "channels": [
-        {
-            "id": 1,
-            "name": "general",
-            "countUsers": 100
-        }, 
-        
-        {
-            "id": 2,
-            "name": "support",
-            "countUsers": 200
-        },
-
-        {
-            "id": 3,
-            "name": "marketing",
-            "countUsers": 300
-        }, 
-
-        {
-            "id": 4,
-            "name": "thailan",
-            "countUsers": 400
-        }, 
-
-        {
-            "id": 5,
-            "name": "bali",
-            "countUsers": 500
-        }, 
-
-        {
-            "id": 6,
-            "name": "poland",
-            "countUsers": 600
-        }, 
-
-        {
-            "id": 7,
-            "name": "australia",
-            "countUsers": 700
-        }, 
-
-        {
-            "id": 8,
-            "name": "jobs",
-            "countUsers": 800
-        }, 
-
-        {
-            "id": 9,
-            "name": "startups",
-            "countUsers": 900
-        }, 
-
-        {
-            "id": 10,
-            "name": "italy",
-            "countUsers": 1000
-        }, 
-
-        {
-            "id": 11,
-            "name": "freelance",
-            "countUsers": 1100
-        }
-    ],
-
-    "messages": [
-
-        {
-            "channelId": 1,
-            "authorId": 1,
-            "time": "Wed Jul 29 2020 22:23:19 GMT+0400 (GMT+04:00)",
-            
-            "reference": {
-                "userName": "pidrila",
-                "url": "url:/"
-            },
-
-            "text": "Здрасте оп хоп",
-            "attachment": {
-                "url": "url:/",
-                "countLikes": 10
-            }
-        }
-    ]
+  "getProfile": [
+    {
+      "id": 1,
+      "avatar": "user1",
+      "displayName": "Amilia Luna",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@amilia_lu",
+      "email": "a-luna@gmail.com",
+      "Skype": "amiluna",
+      "Timezone": "2:21 PM Local time"
+    },
+    {
+      "id": 2,
+      "avatar": "user2",
+      "displayName": "Safredo Juss",
+      "online": false,
+      "position": "Chelovek",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@safredo.ru",
+      "email": "safredo@gmail.com",
+      "Skype": "safredo",
+      "Timezone": "3:44 PM Local time"
+    },
+    {
+      "id": 3,
+      "avatar": "user3",
+      "displayName": "Elneo Faina",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@Elneo",
+      "email": "elneo@gmail.com",
+      "Skype": "elneo",
+      "Timezone": "4:21 PM Local time"
+    },
+    {
+      "id": 4,
+      "avatar": "user4",
+      "displayName": "Mialind Bucu",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@mialind",
+      "email": "mialind@gmail.com",
+      "Skype": "mialind",
+      "Timezone": "5:21 PM Local time"
+    },
+    {
+      "id": 5,
+      "avatar": "user5",
+      "displayName": "Evba Igezing",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@evba",
+      "email": "evba@gmail.com",
+      "Skype": "evba",
+      "Timezone": "6:21 PM Local time"
+    },
+    {
+      "id": 6,
+      "avatar": "user6",
+      "displayName": "Zuba Albenhilde",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@zuba",
+      "email": "zuba@gmail.com",
+      "Skype": "zuba",
+      "Timezone": "7:21 PM Local time"
+    },
+    {
+      "id": 7,
+      "avatar": "user7",
+      "displayName": "Bite Kaeny",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@bite",
+      "email": "bite@gmail.com",
+      "Skype": "bite",
+      "Timezone": "8:21 PM Local time"
+    },
+    {
+      "id": 8,
+      "avatar": "user8",
+      "displayName": "Vestein Axwe",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@vestein",
+      "email": "vestein@gmail.com",
+      "Skype": "vestein",
+      "Timezone": "9:21 PM Local time"
+    },
+    {
+      "id": 9,
+      "avatar": "user9",
+      "displayName": "Jep Mimond",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@jep",
+      "email": "jep@gmail.com",
+      "Skype": "jep",
+      "Timezone": "1:21 AM Local time"
+    },
+    {
+      "id": 10,
+      "avatar": "user10",
+      "displayName": "Thatu Hiit",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@thatu",
+      "email": "thatu@gmail.com",
+      "Skype": "thatu",
+      "Timezone": "2:21 AM Local time"
+    },
+    {
+      "id": 11,
+      "avatar": "user11",
+      "displayName": "Aldr Aetheax",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@aldr",
+      "email": "aldr@gmail.com",
+      "Skype": "aldr",
+      "Timezone": "3:21 AM Local time"
+    },
+    {
+      "id": 12,
+      "avatar": "user12",
+      "displayName": "Olani Foetta",
+      "online": true,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@olani",
+      "email": "olani@gmail.com",
+      "Skype": "olani",
+      "Timezone": "4:21 AM Local time"
+    },
+    {
+      "id": 13,
+      "avatar": "user13",
+      "displayName": "Phogel Maend",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@phogel",
+      "email": "phogel@gmail.com",
+      "Skype": "phogel",
+      "Timezone": "5:21 AM Local time"
+    },
+    {
+      "id": 14,
+      "avatar": "user14",
+      "displayName": "Etrand Berban",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@etrand",
+      "email": "etrand@gmail.com",
+      "Skype": "etrand",
+      "Timezone": "6:21 AM Local time"
+    },
+    {
+      "id": 15,
+      "avatar": "user15",
+      "displayName": "Денис Белоконь",
+      "online": false,
+      "position": "UI Designer",
+      "Facebook": "https://www.facebook.com/",
+      "Twitter": "https://twitter.com/",
+      "Instagram": "https://www.instagram.com/",
+      "In": "https://www.linkedin.com/",
+      "userName": "@denis",
+      "email": "denis@gmail.com",
+      "Skype": "denis",
+      "Timezone": "6:21 AM Local time"
+    }
+  ],
+  "getUsersbyIds": [
+    {
+      "id": 1,
+      "displayName": "dadada",
+      "avatar": "url:/",
+      "online": true
+    }
+  ],
+  "friends": [
+    1,
+    2,
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "channels": [
+    {
+      "id": 1,
+      "name": "general",
+      "countUsers": 100
+    },
+    {
+      "id": 2,
+      "name": "support",
+      "countUsers": 200
+    },
+    {
+      "id": 3,
+      "name": "marketing",
+      "countUsers": 300
+    },
+    {
+      "id": 4,
+      "name": "thailan",
+      "countUsers": 400
+    },
+    {
+      "id": 5,
+      "name": "bali",
+      "countUsers": 500
+    },
+    {
+      "id": 6,
+      "name": "poland",
+      "countUsers": 600
+    },
+    {
+      "id": 7,
+      "name": "australia",
+      "countUsers": 700
+    },
+    {
+      "id": 8,
+      "name": "jobs",
+      "countUsers": 800
+    },
+    {
+      "id": 9,
+      "name": "startups",
+      "countUsers": 900
+    },
+    {
+      "id": 10,
+      "name": "italy",
+      "countUsers": 1000
+    },
+    {
+      "id": 11,
+      "name": "freelance",
+      "countUsers": 1100
+    }
+  ],
+  "messages": [
+    {
+      "id": 1,
+      "channelId": 1,
+      "authorId": 1,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в первый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 2,
+      "channelId": 1,
+      "authorId": 2,
+      "time": "01.08.2020, 15:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в первый канал сообщение 2",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 3,
+      "channelId": 2,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу во второй канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 4,
+      "channelId": 3,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в третий канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 5,
+      "channelId": 4,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в четвертый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 6,
+      "channelId": 5,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в пятый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 7,
+      "channelId": 6,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в шестой канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 8,
+      "channelId": 7,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в седьмой канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 9,
+      "channelId": 8,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в восьмой канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 10,
+      "channelId": 9,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в девятый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 11,
+      "channelId": 10,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в десятый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    {
+      "id": 12,
+      "channelId": 11,
+      "authorId": 2,
+      "time": "01.08.2020, 14:30:52",
+      "reference": {
+        "userName": "asdasd",
+        "url": "url:/"
+      },
+      "text": "Пишу в одиннадцатый канал",
+      "attachment": {
+        "url": "url:/",
+        "countLikes": 10
+      }
+    },
+    
+    {
+      "channelId": "1",
+      "authorId": 15,
+      "time": "2020-08-02T20:18:34.469Z",
+      "reference": null,
+      "text": "Проверка",
+      "attachment": null,
+      "id": 13
+    },
+    {
+      "channelId": "1",
+      "authorId": 15,
+      "time": "2020-08-02T20:19:44.621Z",
+      "reference": null,
+      "text": "Проверка 2",
+      "attachment": null,
+      "id": 14
+    }
+  ]
 }

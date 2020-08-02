@@ -5,7 +5,7 @@
     
     <router-view/>
 
-    <Profile  v-if="show"></Profile>
+    <Profile></Profile>
 
   </div>
 </template>
@@ -17,12 +17,6 @@ import Chat from "@/views/Chat.vue";
 import Profile from "@/components/Profile/Profile.vue";
 
 export default {
-
-    data(){
-      return {
-        show: true
-      }
-    },
 
     components:{
         Navigation,
@@ -163,14 +157,14 @@ table {
   border-spacing: 0;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 </style>
 
 <style lang="scss" scoped>
 
-#app{
+#app {
   display: flex;
   height: 900px;
 }

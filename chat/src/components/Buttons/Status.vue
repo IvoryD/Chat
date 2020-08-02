@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div :class="statusShow"></div>  
+        <div class="status" :class="statusShow"></div>  
     </div>
    
 </template>
@@ -11,19 +11,14 @@ import ThreeDotButtonVue from './ThreeDotButton.vue'
 export default {
 
     props: {
-            statusOnline: String,
+            statusOnline: Boolean,
         },
 
     computed: {
-        statusShow (statusOnline) {
+        statusShow () {
 
-            if(this.statusOnline == "true") {
-                return "statusTrue"
-            }
+            return this.statusOnline ? "online" : "offline"
 
-            if(this.statusOnline == "false") {
-                return "statusFalse"   
-            }  
         }
     }
 }
@@ -37,18 +32,18 @@ export default {
     align-items: center;
 }
 
-.statusTrue {
-        height: 8px;
-        width: 8px;
-        background: #70CC16;
-        border-radius: 5px;
-    }
-
-.statusFalse{
+.status {
     height: 8px;
     width: 8px;
-    background: #666666;
     border-radius: 5px;
 
+    &.online {
+        background: #70CC16;
+    }
+
+    &.offline {
+        background: #666666;
+    }
 }
+
 </style>

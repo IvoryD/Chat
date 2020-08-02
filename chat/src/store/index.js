@@ -11,6 +11,12 @@ export default new Vuex.Store({
     selectedProfile: null,
     showProfile: false,
 
+    currentUserId: 15,
+
+    selectedChannelId: null,
+
+
+
   },
 
   getters: {
@@ -19,12 +25,12 @@ export default new Vuex.Store({
       return state.profiles.filter(profile => ids.find(id => profile.id === id));
     },
 
-    getMessagesByIds: state => ids =>{
-      return state.messages.filter(message => ids.find(id => message.id ===id));
-    },
-
     getSelectedProfile: state => {
       return state.selectedProfile;
+    },
+
+    getAuthor: state => {
+      return state.currentUserId;
     },
 
     getShowProfile: state => {
@@ -47,6 +53,10 @@ export default new Vuex.Store({
       state.showProfile = payload;
     },
 
+    addMessages: (state, payload) =>{
+      state.messages.push(...payload);
+    }
+
   },
 
   actions: {
@@ -66,6 +76,11 @@ export default new Vuex.Store({
     showProfile: async (context) => {
       context.commit('setShowProfile', true);
     },
+
+    addMessages: async (context, payload) =>{
+      context.commit('AddMessages', payload);
+    }
+
   },
 
   modules: {

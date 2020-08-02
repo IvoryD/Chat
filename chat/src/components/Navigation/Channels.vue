@@ -17,8 +17,11 @@
 <script>
 
 import axios from 'axios'
+
 export default {
-    methods:{
+
+    methods: {
+
         goToChannel(channel){
             this.$router.push({ 
                 name: 'Chat', 
@@ -27,7 +30,7 @@ export default {
                 } 
             })
                 .catch(()=>{})
-        }
+        },
     },
 
     computed: {
@@ -39,6 +42,7 @@ export default {
     data() {
         return {
             channels: [],
+            selectedChannelId: null,
         }
     },
 
@@ -48,9 +52,11 @@ export default {
         .get('http://localhost:3000/channels')
         .then(response => {
             vm.channels = response.data
-                if (vm.channels.length) {
-                vm.goToChannel(vm.channels[0])
-            }
+            vm.$router
+                if (vm.channels.length && !vm.$router.currentRoute.params.channelId) {
+                    vm.goToChannel(vm.channels[0])
+
+                }
         });
     }
 }
@@ -72,7 +78,7 @@ header {
     margin-bottom: 14px;
 }
 
-ul{
+ul {
     :last-child {
         margin-bottom: 18px;
     }
@@ -84,7 +90,7 @@ li {
     cursor: pointer;
     color: #B5B5B5;
 
-    &:hover{
+    &:hover {
         color: #FFFFFF;
         background: rgb(105, 105, 109);
     }

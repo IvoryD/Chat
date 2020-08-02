@@ -13,6 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 .notification {
     display: flex;
     align-items: center;

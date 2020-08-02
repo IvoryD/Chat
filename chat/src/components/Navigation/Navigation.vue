@@ -58,9 +58,10 @@ export default {
 <style lang="scss" scoped>
 
 .main {
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 280px;
     background: #25272A;
     opacity: 0.75;
     padding-top: 35px;

@@ -10,7 +10,11 @@
 
             <div class="profile profile-separation" @click="openProfile(friend)" v-for="(friend, i) in friends" :key="i">
                 <Status :statusOnline="friend.online" class="profile-status"></Status>
-                <div class="profile-image"></div>
+                
+                <div class="container-image">
+                    <img class="profile-image" :src="avatarSrc(friend)"/>  
+                </div>  
+                
                 <div class="profile-name"> {{ friend.displayName }} </div>
             </div>
 
@@ -38,10 +42,14 @@ export default {
         }
     },
 
+
     computed: {
+
         countFriends () {
             return this.friendsIds.length || 0
         },
+
+        
     },
 
     mounted() {
@@ -56,7 +64,7 @@ export default {
             if(notDownloadedIds.length){            
                 let filtrationString = "?"
 
-                for(let i = 0; i<notDownloadedIds.length; i++){
+                for(let i = 0; i < notDownloadedIds.length; i++){
                     filtrationString += 'id=' + notDownloadedIds[i] + '&'
                 }
 
@@ -65,14 +73,18 @@ export default {
                     .then(response => {
                         vm.friends.push(...response.data)
                         vm.$store.dispatch('addProfiles', response.data);
-                        })
+                    })
             }
         });
     },  
 
      methods: {
 
-       openProfile(friend){
+        avatarSrc(friend){
+            return friend && friend.avatar ? require(`../../assets/Avatars/${friend.avatar}.jpg`) : ""
+        },
+
+        openProfile(friend){
            this.$store.dispatch('setSelectedProfile', friend);
            this.$store.dispatch('showProfile');
        }
@@ -84,7 +96,7 @@ export default {
 
 <style lang="scss" scoped>
 
-header{
+header {
     display: flex;
     flex-wrap:nowrap;
     justify-content: space-between;
@@ -107,19 +119,18 @@ header{
     cursor: pointer;
     border-radius: 5px;
 
-    &:hover{
+    &:hover {
         color: #FFFFFF;
         background: rgb(105, 105, 109);
     }
 
-    &-status{
+    &-status {
         margin-right: 13px;
     }
 
     &-image {
         width: 35px;
         height: 35px;
-        background: red;
         margin-right: 13px;
         border-radius: 5px;
     }
@@ -138,6 +149,13 @@ header{
     &-separation {
         margin-bottom: 12px;
     }
+}
+
+.container-image {
+    width: 35px;
+    height: 35px;
+    margin-right: 13px;
+    border-radius: 5px;
 }
 
 </style>

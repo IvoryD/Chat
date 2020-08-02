@@ -7,7 +7,15 @@
         <MicrophoneButton></MicrophoneButton>
 
         <div class="footer-container-message">
-            <input type="input" class="input" tabindex="0" :placeholder="'Message in #' + channelName"/>
+            <input type="input" 
+                class="input" 
+                tabindex="0" 
+                :placeholder="'Message in #' + channelName"
+                @input="emitInput($event)" 
+                v-on:keyup.enter="emitEnter"
+                v-model="message"
+                />
+
             <SmileButton></SmileButton>
         </div>
 
@@ -21,7 +29,15 @@ import AttachButton from "@/components/Buttons/AttachButton.vue";
 import MicrophoneButton from "@/components/Buttons/MicrophoneButton.vue";
 import SmileButton from "@/components/Buttons/SmileButton.vue";
 
+import moment from 'moment'
+
 export default {
+
+    data(){
+        return {
+            message: ""
+        }
+    },
 
     props: {
         channelName: String,
@@ -31,7 +47,19 @@ export default {
         AttachButton,
         MicrophoneButton,
         SmileButton,
+    },
+
+    methods:{
+        emitInput(event){
+            this.$emit('input', event.target.value)
+        },
+
+        emitEnter(){
+            this.$emit('enter')
+            this.message = ""
+        }
     }
+
 }
 
 </script>

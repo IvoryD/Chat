@@ -89,7 +89,7 @@ export default {
     }
 }
 
-.container-channel_name{
+.container-channel_name {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -98,12 +98,12 @@ export default {
     margin-right: 6px;
 }
 
-.cluster-container{
+.cluster-container {
     display: flex;
     align-items: center;
 }
 
-.container-search{
+.container-search {
     display: flex;
     align-items: center;
     border: 0.5px solid rgba(0, 0, 0, 0.24);
@@ -130,7 +130,7 @@ export default {
     width: 100%;
   }
 
-  .img-search{
+  .img-search {
     color: #808080
   }
 }

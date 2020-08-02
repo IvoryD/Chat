@@ -3,7 +3,7 @@
     <div class="main" v-if="show">
         <div>
             <div class="container-image">
-                <img class="img-profile">
+                <img class="img-profile" :src="avatarSrc">
             </div>
 
             <div class="container-profile">
@@ -20,10 +20,10 @@
                 </div>
 
                 <div class="container-social separation">
-                    <a :href= profile.Facebook><Facebook></Facebook></a>
-                    <a :href= profile.Twitter><Twitter></Twitter></a>
-                    <a :href= profile.Instagram><Instagram></Instagram></a>
-                    <a :href= profile.In><In></In></a>
+                    <a target="_blank" :href= profile.Facebook><Facebook></Facebook></a>
+                    <a target="_blank" :href= profile.Twitter><Twitter></Twitter></a>
+                    <a target="_blank" :href= profile.Instagram><Instagram></Instagram></a>
+                    <a target="_blank" :href= profile.In><In></In></a>
                 </div>
 
                 <div class="container-buttons separation">
@@ -89,13 +89,17 @@ export default {
 
     computed: {
 
+        avatarSrc(){
+            return this.profile && this.profile.avatar ? require(`../../assets/Avatars/${this.profile.avatar}.jpg`) : ""
+        },
+
         profile() {
             return this.$store.getters.getSelectedProfile;
         },
 
         show() {
             return this.$store.getters.getShowProfile;
-        }
+        },
     },
 
     methods: {
@@ -130,15 +134,25 @@ export default {
     opacity: 0.8;
 }
 
+.container-image {
+    height: 200px;
+}
+
+
+.img-profile {
+    height: 200px;
+    width: 100%;
+}
+
 .container-profile {
      padding: 20px;
 }
 
-.container-status{
+.container-status {
     display: flex;
 }
 
-.name{
+.name {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -148,7 +162,7 @@ export default {
     margin-right: 6px;
 }
 
-.position{
+.position {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -157,7 +171,7 @@ export default {
     color: #5F6164;
 }
 
-.info{
+.info {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -166,7 +180,7 @@ export default {
     color: #000000;
 }
 
-.container-social{
+.container-social {
     display: flex;
     align-items: center;
 
@@ -175,7 +189,7 @@ export default {
     }
 }
 
-h1{
+h1 {
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -185,21 +199,21 @@ h1{
     color: #5F6164;
 }
 
-.separation{
+.separation {
         margin-bottom: 20px;
 }
 
-.container-namePosition{
+.container-namePosition {
     :first-child{
         margin-bottom: 3px;
     }
 }
 
-.separation-info{
+.separation-info {
         margin-bottom: 10px;
 }
 
-.container-arrow{
+.container-arrow {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
@@ -220,8 +234,7 @@ h1{
 .slide-fade-leave-active {
   transition: all .3s;
 }
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active до версии 2.1.8 */ {
+.slide-fade-enter, .slide-fade-leave-to{
   transform: translateX(200px);
 }
 
